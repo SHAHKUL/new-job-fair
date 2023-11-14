@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.URL);
-
+ 
 app.get("/", (req, res) => {
   res.send("getting the data");
 });
