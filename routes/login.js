@@ -9,9 +9,9 @@ try {
     const {email,password}=req.body
     var loginCreditional=await AuthenticationUser(email,password)
 
-    if (loginCreditional=="Invalid User name or password") {
+    if (loginCreditional==="Invalid User name or password") {
         res.status(200).send("Invalid User name or password") 
-    } else if(loginCreditional=="server busy") {
+    } else if(loginCreditional==="server busy") {
         res.status(200).send("server busy")
     }else{
         res.status(200).json({token:loginCreditional.token})
