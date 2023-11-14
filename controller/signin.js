@@ -19,7 +19,7 @@ async function InserVerifyUser(name, email, password) {
       password: hash,
       token,
     });
-    const activateLink = `http://localhost:4000/signin/${token}`;
+    const activateLink = `https://job-fair.onrender.com/signin/${token}`;
     const content = `<h4>Hi, There</h4>
         <h5>Welcome to the app</h5>
         <p>Thank You for signing up, clikc on the below link to activate</p>
